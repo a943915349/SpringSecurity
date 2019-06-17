@@ -14,12 +14,15 @@ import java.util.List;
 @Data
 public class User  implements UserDetails,Serializable {
     private static final long serialVersionUID = 6136355709442355104L;
-    private Integer id;
+    private String id;
     private String username;
     private String nickname;
     private String admin;
-    private Date createDate;
     private String password;
+    private Date createDate;
+    private Date modified_time;
+    private Integer status;
+    private boolean is_delete;
     private List<? extends GrantedAuthority> authorities;
     @Override
     public boolean isAccountNonExpired() {

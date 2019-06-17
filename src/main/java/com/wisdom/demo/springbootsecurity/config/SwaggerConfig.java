@@ -27,7 +27,7 @@ public class SwaggerConfig {
     }
     private ApiInfo apiInfo() {
 
-        return new ApiInfoBuilder().title("demo小练习").termsOfServiceUrl("").version(VERSION).contact(
-                new Contact("demo小练习", "http://www.shijinet.cn", "Kunlun")).build();
+        return new ApiInfoBuilder().title("springSecurity RESTFUL API").description("项目地址：https://github.com/a943915349/SpringSecurity").version(VERSION).contact(
+                new Contact("springSecurity小练习", "https://github.com/a943915349/", "wangzidage@foxmail.com")).build();
     }
 }

@@ -6,6 +6,5 @@ import java.util.List;
 
 
 public interface MenuService {
-
-    List<Menu> getMenusByUserId(Integer userId);
+    List<Menu> getMenusByUserId(String userId);
 }

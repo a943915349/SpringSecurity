@@ -14,7 +14,6 @@ public class Md5PasswordEncoder implements PasswordEncoder {
 
     @Override
     public boolean matches(CharSequence rawPassword, String encodedPassword) {
-        //MD5  32位小写加密方式
         return AesEncryptorUtils.decrypt((String) encodedPassword).contentEquals(rawPassword);
     }
 }
